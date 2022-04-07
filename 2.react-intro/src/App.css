@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  display:flex;
+  align-items: center;
+  height:100px;
+  background-color: rgb(11, 24, 35);
+  color: white;
+  justify-content: space-around;
+}
+
+.brand{
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navlinks{
+  list-style-type: none;
+  display: flex;
+
+}
+
+.links{
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight:bold;
+  cursor: pointer;
+}
+
+.navbtn{
+  color:white;
+  height:fit-content;
+  background-color: rgb(0, 183, 255);
+  font-weight:bold;
+  font-size: 20px;
+  padding:10px 20px;
+  border: none;
+  border-radius:20px;
+  cursor: pointer;cursor: pointer;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
