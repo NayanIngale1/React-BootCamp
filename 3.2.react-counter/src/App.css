@@ -1,0 +1,42 @@
+
+body{
+  background-color: rgb(113, 174, 174);
+}
+.box{
+  text-align: center;
+  background: #eee;
+  box-shadow: rgba(20, 40, 60, 0.2) 0px 8px 24px;
+  margin: 70px auto;
+  width:fit-content;
+  padding:50px;
+}
+
+.btn{
+  margin: 0 20px ;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.heading{
+  font-size: 40px;
+  color:#0080ff;
+}
+
+.red{
+  font-size: 80px;
+  color:red;
+}
+.green{
+  font-size: 80px;
+  color:rgb(0, 187, 0);
+}
+.black {
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+}
