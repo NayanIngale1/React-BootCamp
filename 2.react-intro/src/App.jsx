@@ -1,8 +1,31 @@
 import "./App.css";
+import { ListWithStyle } from "./Components/ListWithStyle";
 
 const linkArr = ["Services", "Projects", "About"];
 
 function App() {
+
+  const systems = [{
+    title: "Android",
+    type: "disc"
+  }, { title: "BlackBerry", type: "disc" }, {
+      title: "iPhone",
+      type: "disc"
+    }, { title: "Windows Phone", type: "disc" }];
+  
+  const manufracturers = [{
+    title: "Samsung",
+    type: "square"
+  }, {
+      title: "HTC",
+      type: "square"
+    }, {
+      title: "Micromax",
+      type: "disc"
+    }, { title: "Apple", type: "circle" }]
+
+
+
   return (
     <div className="App">
       <nav className="navbar">
@@ -22,17 +45,13 @@ function App() {
         
           <h1> Mobile Operating System</h1>
           <ul>
-            <li>Android</li>
-            <li>Blackberry</li>
-            <li>iPhone</li>
-            <li>Window Phone</li>
+          {systems.map(el => {
+            return <ListWithStyle title={el.title} type={el.type} />
+          })}
           </ul>
           <h1>Mobile Manufracturers</h1>
           <ul>
-            <li type="square">Samsung</li>
-            <li type="square">HTC</li>
-            <li type="disc">Micromax</li>
-            <li type="circle">Apple</li>
+           {manufracturers.map(el=> <ListWithStyle {...el}/>)}
           </ul>
         
       </div>
