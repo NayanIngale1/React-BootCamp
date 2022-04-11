@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  border : 1px solid eee;
+  width:fit-content;
+  padding : 20px 40px ;
+  margin : 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.banner{
+  display :flex;
+  justify-content:space-between;
+  border:3px solid lightgray;
+  padding : 20px ;
+  margin-bottom: 20px;
+}
+
+button{
+  margin-left: 20px ;
+  padding : 10px 20px ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none
+}
+
+.addScore,.addWicket,.addBall{
+  margin-bottom: 20px;
+  
+}
+
+.status{
+  color:green;
+}
