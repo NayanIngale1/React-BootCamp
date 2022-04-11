@@ -58,6 +58,9 @@ function App() {
     if (score > 100) {
       return;
     }
+     if (wicket >= 12) {
+      return;
+    }
 
     setBall(oldball + value);
 
