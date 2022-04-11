@@ -24,6 +24,10 @@ function App() {
 
   const handleScore = (oldScore, value) => {
 
+    if (wicket >= 12) {
+      return;
+    }
+
     
     if (oldScore >100) {
           return
