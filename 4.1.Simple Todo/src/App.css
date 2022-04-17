@@ -4,9 +4,16 @@
   max-width: 600px;
   margin: auto;
   padding:40px;
+  padding-top:0px;
 
 }
 
+body {
+  background: rgb(250, 250, 250);
+  /* background-image: url("https://www.4kwallpapers.com/images/walls/thumbs_2t/1455.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 .todoInputContainer{
   margin:40px auto;
   display: flex;
@@ -39,10 +46,11 @@
 
 .todolistContainer{
   width: 100;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  padding : 20px ;  
+  margin: 10px auto;
+  padding : 10px 20px;  
   font-size: 18px;
   border: 1px solid #ddd;
   align-items: center;
@@ -86,3 +94,8 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: green;
 }
 
+
+
+button {
+  cursor: pointer;  
+}
