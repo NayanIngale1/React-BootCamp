@@ -5,7 +5,7 @@
   text-align: center;
   color: #2c3e50;
   font-size: 20px;
-  margin: 100px auto;
+  margin: 20px auto;
 }
 
 #todo_input,
@@ -28,4 +28,15 @@ form {
 #todo {
   padding: 10px 20px;
   font: size 15px;
+}
+#list{
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);margin:20px auto;
+}
+
+#list #todo {
+  border: 2px solid #7f97ae;
+  border-radius: 2px;
+  margin: 5px;
 }

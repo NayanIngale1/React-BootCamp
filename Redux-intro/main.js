@@ -35,6 +35,10 @@ document.querySelector("form").addEventListener("submit", (e) => {
 });
 
 function showTodos(todos) {
+
+  console.log(store.getState().todos);
+
+
   let container = document.getElementById("list");
   container.innerHTML = "";
 
@@ -44,7 +48,7 @@ function showTodos(todos) {
     div.id = "todo";
 
     let p = document.createElement("p");
-    p.innerText = "Status : " + ele.status;
+    p.innerText = "Status : " + ele.status 
     div.appendChild(p);
     
     let deletbtn = document.createElement("button");

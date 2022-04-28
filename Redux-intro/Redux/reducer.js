@@ -14,22 +14,28 @@ export const reducer = (store, action) => {
         ...store,
         todos: store.todos.filter((item) => item !== payload),
       };
-    // case TOGGLE_TODO:
-    //   console.log("hello");
-    //   return {
-    //     ...store,
-    //     todos: [
-    //       ...store.todos.map((ele) => {
-    //         if (ele.title == payload.title) {
-    //           ele = {
-    //             ...ele,
-    //             status: !payload.status,
-    //           };
-    //         }
-    //       }),
-    //     ],
-    //   };
+    case TOGGLE_TODO:
+      return {
+        ...store,
+        todos: 
+          store.todos.map((t) => {
+             return toggle(t,payload);
+          }),
+        
+      };
+
     default:
       return store;
   }
+};
+
+const toggle = (todo,payload) => {
+  if (todo.id !== payload.id) {
+    return todo;
+  }
+
+  return {
+    ...todo,
+    status: !todo.status,
+  };
 };
