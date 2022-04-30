@@ -1,6 +1,6 @@
 
 import { legacy_createStore as createStore } from "redux";
-import { reducer } from "./reducer";
+import { todoReducer } from "./Todos/reducer";
 
 let init = {
     todos:[]
@@ -9,6 +9,6 @@ let init = {
 
 
 
-export const store = createStore(reducer,init);
+export const store = createStore(todoReducer, init);
 
 // store.subscribe(()=>console.log(store.getState()))

@@ -9,7 +9,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { addTodo } from "../Redux/actions";
+import { addTodo } from "../Redux/Todos/actions"
 import { store } from "../Redux/store";
 import { v4 as uuid } from "uuid";
 import { useDispatch } from "react-redux";

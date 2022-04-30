@@ -1,6 +1,6 @@
 import { ADD_TODO, STORE_DATA, DELETE_TODO, TOGGLE_TODO } from "./actions";
 
-export const reducer = (store, action) => {
+export const todoReducer = (store, action) => {
   const { type, payload } = action;
 
   switch (type) {

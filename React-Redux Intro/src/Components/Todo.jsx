@@ -1,7 +1,7 @@
 import { Box, Button, Heading, Text, HStack } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { deleteTodo, toggleTodo } from "../Redux/actions";
+import { deleteTodo, toggleTodo } from "../Redux/Todos/actions";
 
 export const Todo = () => {
   const { id } = useParams();

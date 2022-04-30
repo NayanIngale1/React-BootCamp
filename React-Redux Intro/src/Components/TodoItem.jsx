@@ -2,7 +2,7 @@ import { store } from "../Redux/store";
 import { Box, Flex, Text, Button, Heading } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteTodo, storeData, toggleTodo } from "../Redux/actions";
+import { deleteTodo, storeData, toggleTodo } from "../Redux/Todos/actions";
 import { useEffect } from "react";
 import axios from "axios";
 
