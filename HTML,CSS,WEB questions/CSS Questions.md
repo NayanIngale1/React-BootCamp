@@ -119,16 +119,17 @@ _There are four categories which define the specificity level of a selector:_
 * Elements and pseudo-elements - Example: h1, :before
 
 ex : 
-
-        p	                     1	    1
-        p.test	                 11 	1 + 10
-        p#demo                   101	1 + 100
-    <p style="color: pink;">	 1000	1000
-        #demo	                 100	100
-        .test	                 10 	10
-        p.test1.test2	         21	    1 + 10 + 10
-        #navbar p#demo           201	100 + 1 + 100
-        *	                     0  	0 
+|syntax|weights|description|
+|------|------|------------|
+ | p	    |    1	 |   1| 
+ |  p.test	      |           11 |	1 + 10| 
+ |  p#demo       |            101|	1 + 100 | 
+ | `<p style="color: pink;">`	| 1000	|1000|        
+ |   #demo	     |            100|	100|        
+ |  .test	    |             10 	|10|        
+ |     p.test1.test2	   |      21	|    1 + 10 + 10|        
+ |   #navbar p#demo      |     201	|100 + 1 + 100|        
+ |    *	         |            0  |	0 |
         (the universal selector is ignored)
 
 ---
